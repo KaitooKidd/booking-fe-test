@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  app:
+    image: uet-booking-fe
+    # image: quyendv/uet-booking-fe
+    container_name: uet-booking-fe
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      # - .env
+      - .env.production
+    ports:
+      - '3000:3000'
+    restart: unless-stopped
+    networks:
+      - uet-booking-fe
+    # volumes:
+    #   - ./.env:/app/.env
+    #   - ./.env.production:/app/.env.production
+
+networks:
+  uet-booking-fe:
+    driver: bridge

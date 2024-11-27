@@ -1,0 +1,698 @@
+{
+  "Index": {
+    "title": "Xin chào thế giới!",
+    "signIn": "Đăng nhập",
+    "signUp": "Đăng ký"
+  },
+  "Shared": {
+    "button": {
+      "create": "Tạo mới",
+      "searchHotel": "Tìm kiếm khách sạn"
+    },
+    "datePicker": {
+      "title": "Chọn ngày",
+      "selectYear": "Chọn năm",
+      "selectMonth": "Chọn tháng"
+    },
+    "upload": {
+      "title": "Tải lên hình ảnh",
+      "button": "Chọn một hình ảnh",
+      "dropzone": "Kéo thả ảnh vào đây, hoặc chọn hình ảnh"
+    },
+    "uploadMultiple": {
+      "title": "Thêm các hình ảnh",
+      "button": "Chọn các hình ảnh",
+      "dropzone": "Kéo thả ảnh vào đây, hoặc chọn các hình ảnh",
+      "clear": "Xóa tất cả",
+      "noImage": "Không có hình ảnh nào được chọn",
+      "uploading": "Đang tải lên...",
+      "handling": "Đang xử lý..."
+    },
+    "emptyResult": {
+      "title": "Không tìm thấy!",
+      "description": "Vui lòng thử lại với bộ lọc khác."
+    }
+  },
+  "Header": {
+    "manageAccount": "Quản lý tài khoản",
+    "myBookings": "Đặt chỗ & chuyến đi",
+    "saved": "Đã lưu",
+    "settings": "Cài đặt",
+    "dashboard": "Quản lý chung",
+    "manageCustomers": "Quản lý khách hàng",
+    "manageHotels": "Quản lý khách sạn",
+    "myHotel": "Khách sạn của tôi",
+    "manageReceptionists": "Quản lý lễ tân",
+    "customerBookings": "Đặt chỗ của khách hàng",
+    "signIn": "Đăng nhập",
+    "signUp": "Đăng ký",
+    "signOut": "Đăng xuất",
+    "home": "Trang chủ",
+    "contact": "Liên hệ",
+    "discovery": "Khám phá"
+  },
+  "SignIn": {
+    "title": "Đăng nhập",
+    "description": "Nhập email và mật khẩu của bạn để đăng nhập",
+    "otherSignIn": "Hoặc đăng nhập qua",
+    "email": "Email",
+    "invalidEmail": "Email không hợp lệ",
+    "password": "Mật khẩu",
+    "invalidPassword": "Mật khẩu không được để trống",
+    "submit": "Xác nhận",
+    "invalidCredentials": "Email hoặc mật khẩu không đúng",
+    "unknownError": "Lỗi không xác định. Liên hệ với quản trị viên",
+    "signUpLink": "Chưa có tài khoản? Đăng ký",
+    "success": "🎉 Đăng nhập thành công",
+    "failed": "Đăng nhập thất bại"
+  },
+  "SignUp": {
+    "title": "Tạo tài khoản",
+    "description": "Nhập email của bạn dưới đây để tạo tài khoản",
+    "otherSignUp": "Hoặc đăng ký qua",
+    "email": "Email",
+    "invalidEmail": "Email không hợp lệ",
+    "password": "Mật khẩu",
+    "invalidPassword": "Mật khẩu phải có ít nhất 8 ký tự",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "invalidConfirmPassword": "Mật khẩu không khớp",
+    "submit": "Xác nhận",
+    "existingMessage": "Tài khoản email đã được sử dụng.",
+    "unknownError": "Lỗi không xác định. Liên hệ với quản trị viên",
+    "signInLink": "Đã có tài khoản? Đăng nhập",
+    "success": "Đăng ký thành công",
+    "failed": "Đăng ký thất bại",
+    "verifyEmail": "Vui lòng kiểm tra email của bạn để xác nhận tài khoản"
+  },
+  "VerifyEmail": {
+    "title": "Kiểm tra hòm thư",
+    "emailSent": "Link xác thực đã được gửi tới email của bạn",
+    "emailSentTo": "Link xác thực đã được gửi tới email <bold>{email}</bold>.",
+    "success": "Bạn đã hoàn tất!",
+    "successDescription": "Cảm ơn bạn đã xác thực email.",
+    "successNextStep": "{isAuthenticated, select , true {Quay lại} other {Đăng nhập}}",
+    "verifying": "Đang xác thực...",
+    "verifyingDescription": "Việc này sẽ không mất nhiều thời gian.",
+    "failed": "Có lỗi xảy ra",
+    "failedDescription": "Mã thông báo này không hợp lệ hoặc có thể đã hết hạn. Vui lòng thử lại"
+  },
+  "Settings": {
+    "title": "Cài đặt",
+    "description": "Quản lý cài đặt tài khoản và thiết lập email.",
+    "nav": {
+      "profile": "Hồ sơ",
+      "account": "Tài khoản",
+      "appearance": "Giao diện",
+      "notifications": "Thông báo",
+      "display": "Hiển thị"
+    },
+    "profile": {
+      "title": "Hồ sơ",
+      "description": "Đây là cách mà người khác nhìn thấy bạn trên trang web.",
+      "form": {
+        "name": {
+          "require": "Tên phải có ít nhất 3 ký tự",
+          "label": "Tên",
+          "description": "Tên của bạn sẽ được hiển thị trên trang web. Nó có thể là tên thật của bạn hoặc một bút danh."
+        },
+        "email": {
+          "label": "Email",
+          "description": "Địa chỉ email của bạn sẽ không được hiển thị công khai. Chúng tôi sẽ sử dụng nó để gửi thông tin quan trọng về tài khoản của bạn."
+        },
+        "gender": {
+          "label": "Giới tính",
+          "description": "Chọn giới tính của bạn.",
+          "private": "Riêng tư",
+          "male": "Nam",
+          "female": "Nữ"
+        },
+        "phone": {
+          "label": "Số điện thoại",
+          "description": "Số điện thoại hệ với bạn."
+        },
+        "birthday": {
+          "label": "Ngày sinh",
+          "description": "Cung cấp ngày sinh của bạn.",
+          "select": "Chọn ngày"
+        },
+        "address": {
+          "country": {
+            "label": "Quốc gia",
+            "placeholder": "Nhập quốc gia của bạn."
+          },
+          "province": {
+            "label": "Thành phố",
+            "placeholder": "Nhập thành phố của bạn."
+          },
+          "district": {
+            "label": "Quận",
+            "placeholder": "Nhập quận của bạn."
+          },
+          "ward": {
+            "label": "Phường",
+            "placeholder": "Nhập phường của bạn."
+          },
+          "details": {
+            "label": "Địa chỉ",
+            "placeholder": "Nhập địa chỉ của bạn.",
+            "description": "Cung cấp địa chỉ chi tiết của bạn."
+          }
+        },
+        "submit": {
+          "update": "Cập nhật hồ sơ",
+          "updating": "Đang cập nhật..."
+        }
+      },
+      "verification": {
+        "tooltip": "{verified, select, true {Đã xác minh} other {Chưa xác minh, xác thực ngay}}"
+      },
+      "toast": {
+        "successTitle": "🎉 Cập nhật hồ sơ thành công",
+        "successDesc": "Hồ sơ của bạn đã được cập nhật thành công!",
+        "failureTitle": "Cập nhật hồ sơ thất bại!",
+        "failureDesc": "Đã xảy ra lỗi khi cập nhật hồ sơ của bạn. Vui lòng thử lại.",
+        "verification": {
+          "success": "🎉 Email xác minh đã được gửi",
+          "failure": "Xác minh email thất bại! Vui lòng thử lại."
+        }
+      }
+    }
+  },
+  "Guard": {
+    "unauthorized": "Bạn cần đăng nhập để truy cập trang này.",
+    "notEnoughPermission": "Bạn không có quyền truy cập trang này.",
+    "signIn": "Đăng nhập",
+    "goHome": "Về trang chủ"
+  },
+  "Sidebar": {
+    "overview": "Tổng quan",
+    "customers": "Khách hàng",
+    "hotels": "Khách sạn",
+    "rooms": "Phòng",
+    "receptionists": "Lễ tân",
+    "my_hotel": "Khách sạn",
+    "bookings": "Đơn hàng",
+    "settings": "Cài đặt"
+  },
+  "Favorites": {
+    "toast": {
+      "addSuccess": "Thêm vào danh sách yêu thích thành công!",
+      "addFailure": "Thêm vào danh sách yêu thích thất bại!",
+      "removeSuccess": "Đã xóa khỏi danh sách yêu thích!",
+      "removeFailure": "Xóa khỏi danh sách yêu thích thất bại!"
+    },
+    "empty": {
+      "title": "Bạn chưa lưu bất kỳ khách sạn nào.",
+      "description": "Bạn có thể lưu lại những khách sạn mà bạn thích và muốn ghé thăm sau này.",
+      "discovery": "Khám phá ngay"
+    }
+  },
+  "HotelFilters": {
+    "trigger": "Bộ lọc",
+    "title": "Lọc khách sạn",
+    "description": "Tìm khách sạn hoàn hảo cho chuyến đi của bạn",
+    "form": {
+      "priceRange": {
+        "title": "Khoảng giá",
+        "description": "Chọn khoảng giá theo đêm cho khách sạn của bạn (VND)",
+        "required": "Yêu cầu khoảng giá",
+        "lengthRequired": "Khoảng giá phải có 2 giá trị",
+        "min": "Tối thiểu",
+        "max": "Tối đa"
+      },
+      "rating": {
+        "title": "Đánh giá"
+      },
+      "amenities": {
+        "title": "Tiện nghi",
+        "description": "Chọn các tiện nghi bạn muốn có trong khách sạn của bạn"
+      },
+      "rules": {
+        "title": "Quy định khách sạn"
+      },
+      "reset": "Đặt lại",
+      "apply": "Hiển thị kết quả"
+    },
+    "searchBar": {
+      "location": {
+        "label": "Địa điểm",
+        "placeholder": "Tìm kiếm điểm đến...",
+        "inputPlaceholder": "Tìm thành phố...",
+        "notFound": "Không tìm thấy thành phố."
+      },
+      "time": {
+        "checkIn": "Nhận phòng",
+        "checkOut": "Trả phòng",
+        "placeholder": "Chọn ngày"
+      },
+      "people": {
+        "label": "Người",
+        "placeholder": "Thêm khách",
+        "data": "{guest, plural, =1 {1 khách} other {# khách}}",
+        "guest": "Khách",
+        "guestDesc": "Có bao nhiêu người sẽ lưu trú?",
+        "adult": "Người lớn",
+        "child": "Trẻ em",
+        "reset": "Đặt lại"
+      }
+    }
+  },
+  "HotelForm": {
+    "noRating": "Mới",
+    "title": {
+      "create": "Mô tả khách sạn mới",
+      "edit": "Cập nhật thông tin khách sạn"
+    },
+    "error": {
+      "email": "Email không hợp lệ",
+      "name": "Tên phải có ít nhất 3 ký tự",
+      "description": "Mô tả phải có ít nhất 10 ký tự",
+      "imageUrl": "Yêu cầu hình ảnh",
+      "country": "Yêu cầu quốc gia",
+      "province": "Yêu cầu tỉnh/thành phố",
+      "address": "Yêu cầu địa chỉ",
+      "galleryUrl": "Url không hợp lệ"
+    },
+    "placeholder": {
+      "name": "Beach Hotel",
+      "description": "Khách sạn Biển với nhiều tiện nghi tuyệt vời!",
+      "email": "abc@gmail.com",
+      "country": "Điền quốc gia",
+      "province": "Điền thành phố/tỉnh",
+      "district": "Điền quận/huyện",
+      "ward": "Điền phường/xã",
+      "address": "Nằm ở cuối con đường ven biển!"
+    },
+    "label": {
+      "name": "Tên khách sạn",
+      "description": "Mô tả khách sạn",
+      "amenities": "Chọn tiện nghi",
+      "gym": "Phòng tập gym",
+      "bar": "Quầy bar",
+      "restaurant": "Nhà hàng",
+      "freeParking": "Bãi đỗ xe miễn phí",
+      "movieNight": "Buổi chiếu phim",
+      "coffeeShop": "Quán cà phê",
+      "spa": "Spa",
+      "laundry": "Tiện nghi giặt là",
+      "shopping": "Mua sắm",
+      "bikeRental": "Cho thuê xe đạp",
+      "swimmingPool": "Bể bơi",
+      "image": "Tải lên ảnh bìa",
+      "email": "Email",
+      "country": "Chọn quốc gia",
+      "province": "Chọn thành phố",
+      "district": "Chọn quận",
+      "ward": "Chọn phường",
+      "address": "Mô tả vị trí",
+      "rules": "Quy định khách sạn",
+      "allowSmoking": "Cho phép hút thuốc",
+      "allowPets": "Cho phép thú cưng",
+      "checkIn": "Nhận phòng (Múi giờ +7)",
+      "checkOut": "Trả phòng (Múi giờ +7)",
+      "vn": "Việt Nam",
+      "gallery": "Thư viện ảnh",
+      "rooms": "Danh sách phòng"
+    },
+    "desc": {
+      "name": "Nhập tên khách sạn của bạn",
+      "description": "Nhập mô tả khách sạn của bạn",
+      "amenities": "Chọn các tiện nghi phổ biến trong khách sạn của bạn",
+      "image": "Chọn một hình ảnh để trưng bày khách sạn của bạn!",
+      "email": "Vui lòng nhập email của bạn. Email này sẽ được sử dụng để đăng nhập và liên hệ với bạn",
+      "country": "khách sạn của bạn nằm ở quốc gia nào?",
+      "province": "khách sạn của bạn nằm ở tỉnh/thành phố nào?",
+      "district": "khách sạn của bạn nằm ở quận nào?",
+      "ward": "khách sạn của bạn nằm ở phường/xã nào?",
+      "address": "Cung cấp mô tả chi tiết vị trí của khách sạn của bạn",
+      "gallery": "Thêm một số hình ảnh khác về khách sạn của bạn"
+    },
+    "toast": {
+      "uploadSuccess": "🎉 Tải lên thành công!",
+      "uploadFailure": "Tải lên thất bại!",
+      "removeSuccess": "Hình ảnh đã được xóa",
+      "removeFailure": "Xóa hình ảnh thất bại!",
+      "createSuccess": "🎉 Tạo khách sạn thành công",
+      "createFailure": "Tạo khách sạn thất bại!",
+      "updateSuccess": "🎉 Cập nhật khách sạn thành công",
+      "updateFailure": "Cập nhật thông tin khách sạn thất bại!"
+    },
+    "pricePerNight": "đêm",
+    "button": {
+      "updating": "Đang cập nhật...",
+      "update": "Cập nhật",
+      "creating": "Đang tạo mới...",
+      "create": "Tạo",
+      "view": "Xem chi tiết",
+      "edit": "Chỉnh sửa"
+    },
+    "alert": {
+      "title": "Bước cuối cùng!",
+      "desc1": "Khách sạn của bạn đã được tạo thành công🔥",
+      "desc2": "Vui lòng thêm một số phòng để hoàn tất thiết lập khách sạn của bạn!"
+    },
+    "dialog": {
+      "trigger": "Tạo phòng",
+      "title": "Tạo phòng mới",
+      "desc": "Nhập chi tiết thông tin phòng trong khách sạn của bạn"
+    }
+  },
+  "HotelDetails": {
+    "heading": {
+      "location": "Thông tin vị trí",
+      "about": "Về khách sạn này",
+      "amenities": "Tiện nghi phổ biến",
+      "rooms": "Danh sách phòng",
+      "gallery": "Thư viện ảnh",
+      "reviews": "Đánh giá của khách hàng",
+      "recommendation": "Đề xuất phòng"
+    },
+    "rules": {
+      "heading": "Quy định chung",
+      "checkInTitle": "Nhận phòng",
+      "checkOutTitle": "Trả phòng",
+      "smoking": "Hút thuốc",
+      "pets": "Thú cưng",
+      "checkIn": "<highline>Bất kỳ lúc nào</highline> trong ngày",
+      "checkInAfter": "Sau <highline>{start}</highline> mỗi ngày",
+      "checkInBetween": "Từ <highline>{start}</highline> đến <highline>{end}</highline> mỗi ngày",
+      "checkOut": "<highline>Bất kỳ lúc nào</highline> trong ngày",
+      "checkOutBefore": "Trước <highline>{end}</highline> mỗi ngày",
+      "checkOutBetween": "Từ <highline>{start}</highline> đến <highline>{end}</highline> mỗi ngày"
+    },
+    "info": {
+      "swimmingPool": "Bể bơi",
+      "gym": "Phòng gym",
+      "spa": "Spa",
+      "bar": "Quầy bar",
+      "laundry": "Giặt là",
+      "restaurant": "Nhà hàng",
+      "shopping": "Mua sắm",
+      "freeParking": "Bãi đỗ xe miễn phí",
+      "movieNight": "Buổi chiếu phim",
+      "coffeeShop": "Quán cà phê",
+      "bikeRental": "Cho thuê xe đạp"
+    },
+    "recommendation": {
+      "timeRequired": "Vui lòng chọn ngày nhận phòng và trả phòng để xem các phòng được đề xuất",
+      "empty": "Không tìm thấy phòng được đề xuất"
+    }
+  },
+  "MyBookings": {
+    "title": "Đây là các đặt phòng mà {role, select, hotel {khách tham quan} customer {bạn} other {khách tham quan}} đã đặt",
+    "card": {
+      "toast": {
+        "statusChanged": "Trạng thái đặt phòng đã thay đổi",
+        "statusChangeFailed": "Thay đổi trạng thái đặt phòng thất bại!"
+      },
+      "status": {
+        "booked": "Đã đặt",
+        "checked_in": "Đã nhận phòng",
+        "checked_out": "Đã trả phòng",
+        "completed": "Hoàn thành"
+      },
+      "button": {
+        "rate": "Đánh giá",
+        "seeReview": "Xem đánh giá"
+      },
+      "confirm": {
+        "title": "Bạn có chắc chắn muốn thay đổi trạng thái đặt phòng?",
+        "desc": "Hành động này không thể hoàn tác. Vui lòng xác nhận nếu bạn muốn tiếp tục.",
+        "action": "Tiếp tục",
+        "cancel": "Hủy"
+      },
+      "rate": {
+        "title": "Đánh giá chuyến đi của bạn",
+        "desc": "Chia sẻ về trải nghiệm của bạn tại <bold>{hotelName}</bold> và giúp du khách khác có lựa chọn tốt hơn."
+      },
+      "seeRate": {
+        "title": "Chi tiết đánh giá",
+        "desc": "Xem đánh giá và bình luận của chuyến đi này"
+      }
+    }
+  },
+  "RoomForm": {
+    "error": {
+      "title": "Tiêu đề phải có ít nhất 3 ký tự",
+      "description": "Mô tả phải có ít nhất 10 ký tự",
+      "imageUrl": "URL hình ảnh không hợp lệ",
+      "bedCount": "Yêu cầu số lượng giường",
+      "bedCountExceed": "Số lượng giường phải lớn hơn hoặc bằng số lượng giường king & queen",
+      "guestCount": "Yêu cầu số lượng khách",
+      "bathroomCount": "Yêu cầu số lượng phòng tắm",
+      "roomPrice": "Yêu cầu giá phòng"
+    },
+    "label": {
+      "title": "Tên Phòng",
+      "description": "Mô Tả Phòng",
+      "amenities": "Chọn Tiện Nghi Phòng",
+      "roomService": "Dịch Vụ Phòng 24 Giờ",
+      "tv": "TV",
+      "balcony": "Ban Công",
+      "freeWifi": "Wifi Miễn Phí",
+      "cityView": "View Thành Phố",
+      "oceanView": "View Biển",
+      "forestView": "View Rừng",
+      "mountainView": "View Đồi Núi",
+      "airCondition": "Điều Hòa",
+      "soundProofed": "Cách Âm",
+      "image": "Chọn hình ảnh",
+      "roomPrice": "Giá phòng (VND)",
+      "bedCount": "Số giường",
+      "guestCount": "Số khách",
+      "bathroomCount": "Số phòng tắm",
+      "breakFastPrice": "Giá bữa sáng (VND)",
+      "kingBed": "Giường King",
+      "queenBed": "Giường Queen"
+    },
+    "desc": {
+      "title": "Vui lòng nhập tên phòng",
+      "description": "Có điều gì đặc biệt về phòng này?",
+      "amenities": "Những tiện nghi nào làm cho phòng này trở thành lựa chọn tốt?",
+      "image": "Chọn một hình ảnh để trưng bày phòng của bạn!",
+      "roomPrice": "Giá phòng cho 24 giờ",
+      "bedCount": "Số lượng giường có sẵn trong phòng này",
+      "guestCount": "Số lượng khách được phép trong phòng này",
+      "bathroomCount": "Số lượng phòng tắm trong phòng này",
+      "breakFastPrice": "Giá bữa sáng trong phòng này",
+      "kingBed": "Số lượng giường King có sẵn trong phòng này",
+      "queenBed": "Số lượng giường Queen có sẵn trong phòng này"
+    },
+    "placeholder": {
+      "title": "Phòng đôi",
+      "description": "Có một view đẹp ra biển khi ở trong phòng này!"
+    },
+    "toast": {
+      "uploadSuccess": "🎉 Tải lên thành công!",
+      "uploadFailure": "Tải lên thất bại!",
+      "removeSuccess": "Hình ảnh đã được xóa",
+      "removeFailure": "Xóa hình ảnh thất bại!",
+      "createSuccess": "🎉 Tạo phòng thành công",
+      "createFailure": "Tạo phòng thất bại!",
+      "updateSuccess": "🎉 Cập nhật phòng thành công",
+      "updateFailure": "Cập nhật thông tin phòng thất bại!"
+    },
+    "button": {
+      "updating": "Đang cập nhật...",
+      "update": "Cập nhật",
+      "creating": "Đang tạo mới...",
+      "create": "Tạo"
+    }
+  },
+  "RoomCard": {
+    "amenities": {
+      "bed": "Giường",
+      "guest": "Khách",
+      "bathroom": "Phòng tắm",
+      "kingBed": "Giường King",
+      "queenBed": "Giường Queen",
+      "roomService": "Dịch vụ phòng",
+      "tv": "TV",
+      "balcony": "Ban công",
+      "freeWifi": "Wifi miễn phí",
+      "cityView": "View thành phố",
+      "oceanView": "View biển",
+      "forestView": "View rừng",
+      "mountainView": "View đồi núi",
+      "airCondition": "Điều hòa",
+      "soundProofed": "Cách âm"
+    },
+    "price": {
+      "roomPrice": "Giá phòng",
+      "hour": "đêm",
+      "breakFast": "Giá bữa sáng"
+    },
+    "bookingDetails": {
+      "title": "Chi tiết đặt phòng",
+      "desc": "Phòng được đặt bởi <bold>{customer}</bold> trong {dayCount} ngày vào {date}",
+      "checkIn": "Nhận phòng: {date} bất kỳ lúc nào",
+      "checkInAfter": "Nhận phòng: {date} sau {start}",
+      "checkInBetween": "Nhận phòng: {date} từ {start} đến {end}",
+      "checkOut": "Trả phòng: {date} bất kỳ lúc nào",
+      "checkOutBefore": "Trả phòng: {date} trước {end}",
+      "checkOutBetween": "Trả phòng: {date} từ {start} đến {end}",
+      "breakfast": "Bữa sáng sẽ được phục vụ",
+      "paid": "Đã thanh toán {price} VND",
+      "notPaid": "Chưa thanh toán {price} VND",
+      "viewHotel": "Xem khách sạn",
+      "payNow": "Thanh toán ngay",
+      "expired": "Quá hạn"
+    },
+    "footer": {
+      "selectDateDesc": "Chọn thời gian bạn sẽ ở phòng này",
+      "selectDateTitle": "Chọn ngày",
+      "includeBreakfastDesc": "Bạn có muốn được phục vụ bữa sáng hàng ngày",
+      "includeBreakfastLabel": "Bao gồm bữa sáng",
+      "totalPrice": "Tổng giá",
+      "priceFor": "cho",
+      "days": "ngày",
+      "book": "Đặt phòng",
+      "loading": "Đang xử lý...",
+      "bookingDialogTitle": "Xác nhận đặt phòng",
+      "bookingDialogDesc": "Bạn muốn đặt phòng này cho các ngày đã chọn?",
+      "bookingDialogCancel": "Hủy",
+      "bookingDialogAction": "Tiếp tục",
+      "delete": "Xóa",
+      "deleting": "Đang xóa...",
+      "editTrigger": "Chỉnh sửa phòng",
+      "editTitle": "Chỉnh sửa phòng",
+      "editDesc": "Thay đổi thông tin của phòng này."
+    },
+    "toast": {
+      "deleteSuccess": "Phòng đã được xóa",
+      "deleteFailure": "Xóa phòng thất bại!",
+      "loginRequired": "Bạn cần đăng nhập để đặt phòng",
+      "verifyRequired": "Bạn cần xác minh email để đặt phòng",
+      "dateRequired": "Vui lòng chọn ngày",
+      "dateOverlapTitle": "Ngày không hợp lệ!",
+      "dateOverlapDesc": "Một số ngày đã được đặt trước. Vui lòng chọn lại ngày hoặc phòng khác",
+      "bookingSuccess": "🎉 Đặt phòng thành công",
+      "bookingFailure": "Đặt phòng thất bại!"
+    }
+  },
+  "BookRoom": {
+    "toast": {
+      "redirecting": "Đang chuyển hướng đến cổng thanh toán...",
+      "redirectFailed": "Chuyển hướng đến cổng thanh toán thất bại!",
+      "methodNotSupported": "Phương thức thanh toán này chưa được hỗ trợ!",
+      "noBooking": "Không tìm thấy phòng đã đặt!"
+    },
+    "title": "Hoàn tất thanh toán đặt phòng này!",
+    "payment": {
+      "title": "Lựa chọn phương thức thanh toán phù hợp",
+      "pending": "Đang cập nhật"
+    },
+    "summary": {
+      "heading": "Thông tin chi tiết",
+      "breakfast": "Bạn sẽ được phục vụ bữa sáng hàng ngày lúc {hour}",
+      "total": "Tổng giá",
+      "payNow": "Thanh toán ngay",
+      "processPayment": "Đang xử lý thanh toán..."
+    }
+  },
+  "PaymentResult": {
+    "success": "Thanh toán thành công",
+    "successDesc": "Cảm ơn bạn đã mua hàng!",
+    "failure": "Thanh toán thất bại",
+    "failureDesc": "Có lỗi xảy ra, vui lòng thử lại.",
+    "myBookings": "Xem phòng đã đặt",
+    "goHome": "Quay lại trang chủ"
+  },
+  "Review": {
+    "form": {
+      "ratingRequired": "Vui lòng đánh giá",
+      "commentRequired": "Vui lòng viết đánh giá",
+      "staff": "Nhân viên",
+      "facility": "Tiện nghi",
+      "comfort": "Thoải mái",
+      "cleanliness": "Vệ sinh",
+      "valueForMoney": "Đáng tiền",
+      "location": "Vị trí",
+      "comment": "Bình luận",
+      "commentPlaceholder": "Chia sẻ trải nghiệm của bạn",
+      "submit": "Gửi",
+      "cancel": "Đóng"
+    },
+    "toast": {
+      "success": "🎉 Đánh giá đã được gửi thành công",
+      "failure": "Gửi đánh giá thất bại!",
+      "missingParams": "Thiếu hotelId hoặc bookingId"
+    },
+    "rateDesc": {
+      "useless": "Không hữu ích",
+      "useless+": "Không hữu ích+",
+      "poor": "Kém",
+      "poor+": "Kém+",
+      "ok": "Trung bình",
+      "ok+": "Trung bình+",
+      "good": "Rất tốt",
+      "good+": "Rất tốt+",
+      "excellent": "Xuất sắc",
+      "excellent+": "Xuất sắc+"
+    }
+  },
+  "Contact": {
+    "toast": {
+      "success": "🎉 Gửi tin nhắn thành công",
+      "successDesc": "Cảm ơn bạn đã gửi phản hồi. Chúng tôi sẽ phản hồi lại bạn sớm nhất có thể.",
+      "failure": "Gửi tin nhắn thất bại!",
+      "failureDesc": "Đã xảy ra lỗi khi gửi tin nhắn của bạn. Vui lòng thử lại."
+    },
+    "summary": {
+      "title": "Hãy thoải mái phản hồi",
+      "description": "Chúng tôi đánh giá cao phản hồi và yêu cầu của bạn. Nếu bạn có bất kỳ câu hỏi hoặc cần hỗ trợ, vui lòng liên hệ với chúng tôi. Chúng tôi sẽ phản hồi lại bạn trong thời gian sớm nhất có thể. Vui lòng liên hệ với chúng tôi qua các phương thức sau",
+      "info": {
+        "heading": "Thông tin liên hệ",
+        "address": "Địa chỉ",
+        "addressValue": "Cầu Giấy, Hà Nội, Việt Nam",
+        "phone": "Điện thoại",
+        "email": "Email"
+      },
+      "business": {
+        "heading": "Giờ làm việc",
+        "mondayToFriday": "Thứ Hai - Sáu",
+        "saturday": "Thứ Bảy",
+        "sunday": "Chủ Nhật",
+        "closed": "Đóng cửa"
+      }
+    },
+    "register": {
+      "title": "Đăng ký Khách sạn của bạn",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "name": "Tên",
+      "gender": {
+        "label": "Giới tính",
+        "private": "Riêng tư",
+        "male": "Nam",
+        "female": "Nữ"
+      },
+      "hotelName": "Tên Khách sạn",
+      "hotelAddress": "Địa chỉ Khách sạn",
+      "content": "Nội dung",
+      "contentPlaceholder": "Tôi muốn đăng ký khách sạn của tôi với dịch vụ của bạn...",
+      "submit": "Gửi"
+    }
+  },
+  "Footer": {
+    "about": {
+      "title": "Về chúng tôi",
+      "description": "Chúng tôi cam kết mang đến cho khách hàng trải nghiệm đặt phòng tuyệt vời và những kỳ nghỉ đáng nhớ tại những khách sạn tốt nhất."
+    },
+    "general": {
+      "title": "Chung",
+      "home": "Trang chủ",
+      "discovery": "Khám phá",
+      "p&s": "Quyền riêng tư & Bảo mật",
+      "faqs": "Câu hỏi thường gặp"
+    },
+    "contact": {
+      "title": "Liên hệ",
+      "address": "Cầu Giấy, Hà Nội, Việt Nam"
+    },
+    "social": {
+      "title": "Mạng xã hội",
+      "description": "Theo dõi chúng tôi trên mạng xã hội để cập nhật tin tức và khuyến mãi mới nhất."
+    }
+  }
+}

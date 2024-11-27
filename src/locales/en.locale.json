@@ -1,0 +1,698 @@
+{
+  "Index": {
+    "title": "Hello world!",
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
+  },
+  "Shared": {
+    "button": {
+      "create": "Create New",
+      "searchHotel": "Search Hotels..."
+    },
+    "datePicker": {
+      "title": "Pick a date",
+      "selectYear": "Select Year",
+      "selectMonth": "Select Month"
+    },
+    "upload": {
+      "title": "Upload an image",
+      "button": "Choose an image",
+      "dropzone": "Drag 'n' drop an image here, or click to select an image"
+    },
+    "uploadMultiple": {
+      "title": "Upload images",
+      "button": "Choose images",
+      "dropzone": "Drag 'n' drop images here, or click to select images",
+      "clear": "Clear all images",
+      "noImage": "No image uploaded yet",
+      "uploading": "Uploading images ...",
+      "handling": "Handling images ..."
+    },
+    "emptyResult": {
+      "title": "No resource found!",
+      "description": "Try different filters or remove some filters to see results."
+    }
+  },
+  "Header": {
+    "manageAccount": "Manage account",
+    "myBookings": "Bookings & Trips",
+    "saved": "Saved",
+    "settings": "Settings",
+    "dashboard": "Dashboard",
+    "manageCustomers": "Manage Customers",
+    "manageHotels": "Manage Hotels",
+    "manageReceptionists": "Manage Receptionists",
+    "myHotel": "My Hotel",
+    "customerBookings": "Customer Bookings",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign out",
+    "home": "Home",
+    "contact": "Contact",
+    "discovery": "Discovery"
+  },
+  "SignIn": {
+    "title": "Sign in",
+    "description": "Enter your email and password below to sign in",
+    "otherSignIn": "Or continue with",
+    "email": "Email",
+    "invalidEmail": "Invalid email address",
+    "password": "Password",
+    "invalidPassword": "Password must be not empty",
+    "submit": "Submit",
+    "invalidCredentials": "Invalid credentials. Please try again.",
+    "unknownError": "Unknown error. Please contact system administrator",
+    "signUpLink": "Don't have an account? Sign up",
+    "success": "🎉 Sign in successful",
+    "failed": "Sign in failed"
+  },
+  "SignUp": {
+    "title": "Create an account",
+    "description": "Enter your email below to create your account",
+    "otherSignUp": "Or continue with",
+    "email": "Email",
+    "invalidEmail": "Invalid email address",
+    "password": "Password",
+    "invalidPassword": "Password must contain at least 8 characters",
+    "confirmPassword": "Confirm Password",
+    "invalidConfirmPassword": "Passwords do not match",
+    "submit": "Submit",
+    "existingMessage": "Email already exists",
+    "unknownError": "Unknown error. Please contact system administrator",
+    "signInLink": "Already have an account? Sign in",
+    "success": "Sign up successful",
+    "failed": "Sign up failed",
+    "verifyEmail": "Verify email sent. Please check your inbox."
+  },
+  "VerifyEmail": {
+    "title": "Check your email",
+    "emailSent": "We've sent a verification link to your email.",
+    "emailSentTo": "We've sent a verification link to email <bold>{email}</bold>.",
+    "success": "You're all set!",
+    "successDescription": "Thank you for verifying your email.",
+    "successNextStep": "{isAuthenticated, select , true {Go Back} other {Sign In}}",
+    "verifying": "Verifying...",
+    "verifyingDescription": "This won't take long.",
+    "failed": "There was a problem",
+    "failedDescription": "This token is not valid or might be expired. Please try again."
+  },
+  "Settings": {
+    "title": "Settings",
+    "description": "Manage your account settings and set e-mail preferences.",
+    "nav": {
+      "profile": "Profile",
+      "account": "Account",
+      "appearance": "Appearance",
+      "notifications": "Notifications",
+      "display": "Display"
+    },
+    "profile": {
+      "title": "Profile",
+      "description": "This is how others will see you on the site.",
+      "form": {
+        "name": {
+          "require": "Name must be at least 3 characters long",
+          "label": "Name",
+          "description": "Your name will be displayed on the site. It can be your real name or a pseudonym."
+        },
+        "email": {
+          "label": "Email",
+          "description": "Your email address will not be displayed publicly. We will use it to send you important information about your account."
+        },
+        "gender": {
+          "label": "Gender",
+          "description": "Select your gender.",
+          "private": "Private",
+          "male": "Male",
+          "female": "Female"
+        },
+        "phone": {
+          "label": "Phone",
+          "description": "Hotel can use it to contact with you."
+        },
+        "birthday": {
+          "label": "Birthday",
+          "description": "Provide your date of birth.",
+          "select": "Pick a date"
+        },
+        "address": {
+          "country": {
+            "label": "Country",
+            "placeholder": "Enter your country."
+          },
+          "province": {
+            "label": "City",
+            "placeholder": "Enter your city."
+          },
+          "district": {
+            "label": "District",
+            "placeholder": "Enter your district."
+          },
+          "ward": {
+            "label": "Ward",
+            "placeholder": "Enter your ward."
+          },
+          "details": {
+            "label": "Address",
+            "placeholder": "Enter your address.",
+            "description": "Provide your detailed address."
+          }
+        },
+        "submit": {
+          "update": "Update Profile",
+          "updating": "Updating..."
+        }
+      },
+      "verification": {
+        "tooltip": "{verified, select, true {Verified} other {Not verified, verify now}}"
+      },
+      "toast": {
+        "successTitle": "🎉 Profile updated",
+        "successDesc": "Your profile has been updated successfully!",
+        "failureTitle": "Profile update failed!",
+        "failureDesc": "An error occurred while updating your profile. Please try again.",
+        "verification": {
+          "success": "🎉 Email verification sent",
+          "failure": "Email verification failed! Please try again."
+        }
+      }
+    }
+  },
+  "Guard": {
+    "unauthorized": "You are not authorized to access this page.",
+    "notEnoughPermission": "You do not have enough permission to access this page.",
+    "signIn": "Sign In",
+    "goHome": "Go Home"
+  },
+  "Sidebar": {
+    "overview": "Overview",
+    "customers": "Customers",
+    "hotels": "Hotels",
+    "rooms": "Rooms",
+    "receptionists": "Receptionists",
+    "my_hotel": "My Hotel",
+    "bookings": "Bookings",
+    "settings": "Settings"
+  },
+  "Favorites": {
+    "toast": {
+      "addSuccess": "Hotel added to favorites",
+      "addFailure": "Add hotel to favorites failed!",
+      "removeSuccess": "Hotel removed from favorites",
+      "removeFailure": "Remove hotel from favorites failed!"
+    },
+    "empty": {
+      "title": "You haven't saved any hotels yet.",
+      "description": "You can save hotels that you like and want to visit later.",
+      "discovery": "Discovery Now"
+    }
+  },
+  "HotelFilters": {
+    "trigger": "Filters",
+    "title": "Filter Hotels",
+    "description": "Find the perfect hotel for your trip",
+    "form": {
+      "priceRange": {
+        "title": "Price Range",
+        "description": "Select the nightly price range for your hotels (VND)",
+        "required": "Price range is required",
+        "lengthRequired": "Price range must have 2 values",
+        "min": "Min",
+        "max": "Max"
+      },
+      "rating": {
+        "title": "Rating"
+      },
+      "amenities": {
+        "title": "Amenities",
+        "description": "Select the amenities you want to have in your hotel"
+      },
+      "rules": {
+        "title": "Hotel Rules"
+      },
+      "reset": "Reset",
+      "apply": "Show Results"
+    },
+    "searchBar": {
+      "location": {
+        "label": "Where",
+        "placeholder": "Search destination...",
+        "inputPlaceholder": "Search city...",
+        "notFound": "No city founded."
+      },
+      "time": {
+        "checkIn": "Check in",
+        "checkOut": "Check out",
+        "placeholder": "Add dates"
+      },
+      "people": {
+        "label": "People",
+        "placeholder": "Add guests",
+        "data": "{guest, plural, =1 {1 guest} other {# guests}}",
+        "guest": "Guests",
+        "guestDesc": "How many people will be staying?",
+        "adult": "Adults",
+        "child": "Children",
+        "reset": "Reset"
+      }
+    }
+  },
+  "HotelForm": {
+    "noRating": "New",
+    "title": {
+      "create": "Describe new hotel",
+      "edit": "Update your hotel"
+    },
+    "error": {
+      "email": "Invalid Email",
+      "name": "Name must be at least 3 characters long",
+      "description": "Description must be at least 10 characters long",
+      "imageUrl": "Image is required",
+      "country": "Country is required",
+      "province": "Province is required",
+      "address": "Address is required",
+      "galleryUrl": "Invalid url"
+    },
+    "placeholder": {
+      "name": "Beach Hotel",
+      "description": "Beach Hotel is parked with many awesome amenities!",
+      "email": "abc@gmail.com",
+      "country": "Enter the country",
+      "province": "Enter the city",
+      "district": "Enter the district",
+      "ward": "Enter the ward",
+      "address": "Located at the very end of the beach road!"
+    },
+    "label": {
+      "name": "Hotel Name",
+      "description": "Hotel Description",
+      "amenities": "Choose Amenities",
+      "gym": "Gym",
+      "bar": "Bar",
+      "restaurant": "Restaurant",
+      "freeParking": "Free Parking",
+      "movieNight": "Movie Night",
+      "coffeeShop": "Coffee Shop",
+      "spa": "Spa",
+      "laundry": "Laundry Facilities",
+      "shopping": "Shopping",
+      "bikeRental": "Bike Rental",
+      "swimmingPool": "Swimming Pool",
+      "image": "Upload an cover image",
+      "email": "Email",
+      "country": "Country",
+      "province": "City",
+      "district": "District",
+      "ward": "Ward",
+      "address": "Location Description",
+      "rules": "Hotel Rules",
+      "allowSmoking": "Allow Smoking",
+      "allowPets": "Allow Pets",
+      "checkIn": "Check In (GMT+7)",
+      "checkOut": "Check Out (GMT+7)",
+      "vn": "Viet Nam",
+      "gallery": "Hotel Gallery",
+      "rooms": "Hotel Rooms"
+    },
+    "desc": {
+      "name": "Provide your hotel name",
+      "description": "Provide your hotel description",
+      "amenities": "Choose Amenities popular in your hotel",
+      "image": "Choose an image that will show-case your hotel nicely!",
+      "email": "Please provide your hotel's email address. This will be used for communication with your customers.",
+      "country": "In which country is your property located?",
+      "province": "In which province/city is your property located?",
+      "district": "In which district is your property located?",
+      "ward": "In which ward is your property located?",
+      "address": "Provide a detailed location description of your hotel",
+      "gallery": "Choose images that will show-case your hotel nicely!"
+    },
+    "toast": {
+      "uploadSuccess": "🎉 Upload Completed!",
+      "uploadFailure": "Upload failed!",
+      "removeSuccess": "Image removed",
+      "removeFailure": "Remove image failed!",
+      "createSuccess": "🎉 Hotel created successfully",
+      "createFailure": "Hotel created failed!",
+      "updateSuccess": "🎉 Hotel updated successfully",
+      "updateFailure": "Hotel updated failed!"
+    },
+    "pricePerNight": "night",
+    "button": {
+      "updating": "Updating...",
+      "update": "Update",
+      "creating": "Creating...",
+      "create": "Create",
+      "view": "View",
+      "edit": "Edit"
+    },
+    "alert": {
+      "title": "One last step!",
+      "desc1": "Your hotel created successfully🔥",
+      "desc2": "Please add some rooms to complete your hotel setup!"
+    },
+    "dialog": {
+      "trigger": "Add Room",
+      "title": "Add a room",
+      "desc": "Add details about a room in your hotel."
+    }
+  },
+  "HotelDetails": {
+    "heading": {
+      "location": "Location Details",
+      "about": "About this hotel",
+      "amenities": "Popular Amenities",
+      "rooms": "Hotel Rooms",
+      "gallery": "Gallery",
+      "reviews": "Customer Reviews",
+      "recommendation": "Recommended Rooms"
+    },
+    "rules": {
+      "heading": "Common Rules",
+      "checkInTitle": "Check In",
+      "checkOutTitle": "Check Out",
+      "smoking": "Smoking",
+      "pets": "Pets",
+      "checkIn": "<highline>Any time</highline> during the day",
+      "checkInAfter": "After <highline>{start}</highline> each day",
+      "checkInBetween": "From <highline>{start}</highline> to <highline>{end}</highline> each day",
+      "checkOut": "<highline>Any time</highline> during the day",
+      "checkOutBefore": "Before <highline>{end}</highline> each day",
+      "checkOutBetween": "From <highline>{start}</highline> to <highline>{end}</highline> each day"
+    },
+    "info": {
+      "swimmingPool": "Pool",
+      "gym": "Gym",
+      "spa": "Spa",
+      "bar": "Bar",
+      "laundry": "Laundry Facilities",
+      "restaurant": "Restaurant",
+      "shopping": "Shopping",
+      "freeParking": "Free Parking",
+      "movieNight": "Movie Night",
+      "coffeeShop": "Coffee Shop",
+      "bikeRental": "Bike Rental"
+    },
+    "recommendation": {
+      "timeRequired": "Select check-in and check-out date to see recommended rooms",
+      "empty": "No recommended rooms found"
+    }
+  },
+  "MyBookings": {
+    "title": "Here are bookings {role, select, hotel {visitors} customer {you} other {visitors}} have made",
+    "card": {
+      "toast": {
+        "statusChanged": "Booking status changed",
+        "statusChangeFailed": "Change booking status failed!"
+      },
+      "button": {
+        "rate": "Rate",
+        "seeReview": "See Review"
+      },
+      "status": {
+        "booked": "Booked",
+        "checked_in": "Checked In",
+        "checked_out": "Checked Out",
+        "completed": "Completed"
+      },
+      "confirm": {
+        "title": "Are you sure you want to change the booking status?",
+        "desc": "This action cannot be undone. Please confirm if you want to proceed.",
+        "action": "Continue",
+        "cancel": "Cancel"
+      },
+      "rate": {
+        "title": "Rating your trips",
+        "desc": "Tell us about your experience at <bold>{hotelName}</bold> and help other travelers make a better choice."
+      },
+      "seeRate": {
+        "title": "Review Details",
+        "desc": "See the rating and review of this trip"
+      }
+    }
+  },
+  "RoomForm": {
+    "error": {
+      "title": "Title must be at least 3 characters",
+      "description": "Description must be at least 10 characters",
+      "imageUrl": "Image URL is invalid",
+      "bedCount": "Bed count is required",
+      "bedCountExceed": "Bed count must be greater than or equal king bed count and queen bed count",
+      "guestCount": "Guest count is required",
+      "bathroomCount": "Bathroom count is required",
+      "roomPrice": "Room price is required"
+    },
+    "label": {
+      "title": "Room Title",
+      "description": "Room Description",
+      "amenities": "Choose Room Amenities",
+      "roomService": "24hrs Room Services",
+      "tv": "TV",
+      "balcony": "Balcony",
+      "freeWifi": "Free Wifi",
+      "cityView": "City View",
+      "oceanView": "Ocean View",
+      "forestView": "Forest View",
+      "mountainView": "Mountain View",
+      "airCondition": "Air Condition",
+      "soundProofed": "Sound Proofed",
+      "image": "Upload an image",
+      "roomPrice": "Room price in VND",
+      "bedCount": "Bed Count",
+      "guestCount": "Guest Count",
+      "bathroomCount": "Bathroom Count",
+      "breakFastPrice": "Breakfast Price in VND",
+      "kingBed": "King Beds",
+      "queenBed": "Queen Beds"
+    },
+    "desc": {
+      "title": "Provide your room name",
+      "description": "Is there anything special about this room?",
+      "amenities": "What make this room a good choice?",
+      "image": "Choose an image that will show-case your room nicely!",
+      "roomPrice": "State the price for staying in this room for 24hrs",
+      "bedCount": "How many beds are available in this room",
+      "guestCount": "How many guests are allowed in this room",
+      "bathroomCount": "How many bathrooms are in this room",
+      "breakFastPrice": "State the price for breakfast in this room",
+      "kingBed": "How many king beds are available in this room",
+      "queenBed": "How many queen beds are available in this room"
+    },
+    "placeholder": {
+      "title": "Double Room",
+      "description": "Have a beautiful view of the ocean while in this room!"
+    },
+    "toast": {
+      "uploadSuccess": "🎉 Upload Completed!",
+      "uploadFailure": "Upload failed!",
+      "removeSuccess": "Image removed",
+      "removeFailure": "Remove image failed!",
+      "createSuccess": "🎉 Room created successfully",
+      "createFailure": "Room created failed!",
+      "updateSuccess": "🎉 Room updated successfully",
+      "updateFailure": "Room updated failed!"
+    },
+    "button": {
+      "updating": "Updating...",
+      "update": "Update",
+      "creating": "Creating...",
+      "create": "Create"
+    }
+  },
+  "RoomCard": {
+    "amenities": {
+      "bed": "Bed(s)",
+      "guest": "Guest(s)",
+      "bathroom": "Bathroom(s)",
+      "kingBed": "King Bed(s)",
+      "queenBed": "Queen Bed(s)",
+      "roomService": "Room Services",
+      "tv": "TV",
+      "balcony": "Balcony",
+      "freeWifi": "Free Wifi",
+      "cityView": "City View",
+      "oceanView": "Ocean View",
+      "forestView": "Forest View",
+      "mountainView": "Mountain View",
+      "airCondition": "Air Condition",
+      "soundProofed": "Sound Proofed"
+    },
+    "price": {
+      "roomPrice": "Room Price",
+      "hour": "night",
+      "breakFast": "Breakfast Price"
+    },
+    "bookingDetails": {
+      "title": "Booking Details",
+      "desc": "Room booked by <bold>{customer}</bold> for {dayCount} days at {date}",
+      "checkIn": "Check-in: {date} at any time",
+      "checkInAfter": "Check-in: {date} after {start}",
+      "checkInBetween": "Check-in: {date} from {start} to {end}",
+      "checkOut": "Check-out: {date} at any time",
+      "checkOutBefore": "Check-out: {date} before {end}",
+      "checkOutBetween": "Check-out: {date} from {start} to {end}",
+      "breakfast": "Breakfast will be served",
+      "paid": "Paid {price} VND",
+      "notPaid": "Not Paid {price} VND",
+      "viewHotel": "View Hotel",
+      "payNow": "Pay Now",
+      "expired": "Expired"
+    },
+    "footer": {
+      "selectDateDesc": "Select days that you will spend in this room",
+      "selectDateTitle": "Pick a date",
+      "includeBreakfastDesc": "Do you want to be served breakfast each day",
+      "includeBreakfastLabel": "Include Breakfast",
+      "totalPrice": "Total Price",
+      "priceFor": "for",
+      "days": "days",
+      "book": "Book Room",
+      "loading": "Loading...",
+      "bookingDialogTitle": "Booking Confirmation",
+      "bookingDialogDesc": "You want to book this room for the selected days?",
+      "bookingDialogCancel": "Cancel",
+      "bookingDialogAction": "Continue",
+      "delete": "Delete",
+      "deleting": "Deleting...",
+      "editTrigger": "Edit Room",
+      "editTitle": "Edit Room",
+      "editDesc": "Make changes to this room."
+    },
+    "toast": {
+      "deleteSuccess": "Room removed",
+      "deleteFailure": "Remove room failed!",
+      "loginRequired": "You need to sign in to book a room",
+      "verifyRequired": "You need to verify your email to book a room",
+      "dateRequired": "Please select a date",
+      "dateOverlapTitle": "Date Overlap!",
+      "dateOverlapDesc": "Oops! Some of the days you are trying to book have already been reserved. Please select different dates or rooms",
+      "bookingSuccess": "🎉 Room booked successfully",
+      "bookingFailure": "Room booking failed!"
+    }
+  },
+  "BookRoom": {
+    "toast": {
+      "redirecting": "Redirecting to payment gateway ...",
+      "redirectFailed": "Failed to redirect to payment gateway!",
+      "methodNotSupported": "This payment method is not available yet!",
+      "noBooking": "No booking found!"
+    },
+    "title": "Complete payment to reserve this room!",
+    "payment": {
+      "title": "Select your payment method",
+      "pending": "Not available yet"
+    },
+    "summary": {
+      "heading": "Your Booking Summary",
+      "breakfast": "You will be served breakfast each day at {hour}",
+      "total": "Total Price",
+      "payNow": "Pay Now",
+      "processPayment": "Process Payment ..."
+    }
+  },
+  "PaymentResult": {
+    "success": "Payment successful",
+    "successDesc": "Thank you for your purchase!",
+    "failure": "Payment failed",
+    "failureDesc": "An error occurred, please try again.",
+    "myBookings": "My Bookings",
+    "goHome": "Go back to homepage"
+  },
+  "Review": {
+    "form": {
+      "ratingRequired": "Rating is required",
+      "commentRequired": "Review is required",
+      "staff": "Staff",
+      "facility": "Facilities",
+      "comfort": "Comfort",
+      "cleanliness": "Cleanliness",
+      "valueForMoney": "Value for Money",
+      "location": "Location",
+      "comment": "Comment",
+      "commentPlaceholder": "Tell us about your experience",
+      "submit": "Submit",
+      "cancel": "Close"
+    },
+    "toast": {
+      "success": "🎉 Review submitted successfully",
+      "failure": "Review submission failed!",
+      "missingParams": "Missing hotelId or bookingId"
+    },
+    "rateDesc": {
+      "useless": "Useless",
+      "useless+": "Useless+",
+      "poor": "Poor",
+      "poor+": "Poor+",
+      "ok": "Ok",
+      "ok+": "Ok+",
+      "good": "Good",
+      "good+": "Good+",
+      "excellent": "Excellent",
+      "excellent+": "Excellent+"
+    }
+  },
+  "Contact": {
+    "toast": {
+      "success": "🎉 Message sent successfully",
+      "successDesc": "Thank you for your feedback. We will get back to you as soon as possible.",
+      "failure": "Message sending failed!",
+      "failureDesc": "An error occurred while sending your message. Please try again."
+    },
+    "summary": {
+      "title": "Feel free to feedback",
+      "description": "We value your feedback and inquiries. If you have any questions or need assistance, please contact us. We will get back to you as soon as possible. Please reach out to us through the following methods",
+      "info": {
+        "heading": "Contact Information",
+        "address": "Address",
+        "addressValue": "Cau Giay, Ha Noi, Viet Nam",
+        "phone": "Phone",
+        "email": "Email"
+      },
+      "business": {
+        "heading": "Business Hours",
+        "mondayToFriday": "Monday - Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "closed": "Closed"
+      }
+    },
+    "register": {
+      "title": "Register Your Hotel",
+      "email": "Email",
+      "phone": "Phone",
+      "name": "Name",
+      "gender": {
+        "label": "Gender",
+        "private": "Private",
+        "male": "Male",
+        "female": "Female"
+      },
+      "hotelName": "Hotel Name",
+      "hotelAddress": "Hotel Address",
+      "content": "Content",
+      "contentPlaceholder": "I want to register my hotel with your service...",
+      "submit": "Submit"
+    }
+  },
+  "Footer": {
+    "about": {
+      "title": "About",
+      "description": "We are committed to providing our guests with an exceptional booking experience and unforgettable stays at the best hotels."
+    },
+    "general": {
+      "title": "General",
+      "home": "Home",
+      "discovery": "Discovery",
+      "p&s": "Privacy & Security",
+      "faqs": "Frequently Asked Questions"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Cau Giay, Ha Noi, Viet Nam"
+    },
+    "social": {
+      "title": "Social",
+      "description": "Follow us on social media to stay up-to-date with the latest news and promotions."
+    }
+  }
+}
