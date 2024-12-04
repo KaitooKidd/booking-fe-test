@@ -47,43 +47,43 @@ export function getFilteredHotels(
   searchBar: HotelSearchBarSchema,
 ) {
   const result: HotelOverview[] = [];
-  // if (!originHotels) {
-  //   console.error('originHotels is null or undefined');
-  //   return; // Hoặc có thể xử lý theo cách khác
-  // }
-  // for (const hotel of originHotels) {
-  //   // Filter Params
-  //   if (!hotel.overview.rooms.minPrice) continue;
-  //   if (
-  //     hotel.overview.rooms.minPrice < filters.priceRange[0] ||
-  //     hotel.overview.rooms.minPrice > filters.priceRange[1]
-  //   ) {
-  //     continue;
-  //   }
+  if (!originHotels) {
+    console.error('originHotels is null or undefined');
+    return; // Hoặc có thể xử lý theo cách khác
+  }
+  for (const hotel of originHotels) {
+    // Filter Params
+    // if (!hotel.overview.rooms.minPrice) continue;
+    // if (
+    //   hotel.overview.rooms.minPrice < filters.priceRange[0] ||
+    //   hotel.overview.rooms.minPrice > filters.priceRange[1]
+    // ) {
+    //   continue;
+    // }
 
-  //   if (hotel.overview.reviews.average < filters.rating) continue;
+    // if (hotel.overview.reviews.average < filters.rating) continue;
 
-  //   if (filters.gym && !hotel.gym) continue;
-  //   if (filters.bar && !hotel.bar) continue;
-  //   if (filters.restaurant && !hotel.restaurant) continue;
-  //   if (filters.freeParking && !hotel.freeParking) continue;
-  //   if (filters.movieNight && !hotel.movieNight) continue;
-  //   if (filters.coffeeShop && !hotel.coffeeShop) continue;
-  //   if (filters.spa && !hotel.spa) continue;
-  //   if (filters.laundry && !hotel.laundry) continue;
-  //   if (filters.shopping && !hotel.shopping) continue;
-  //   if (filters.bikeRental && !hotel.bikeRental) continue;
-  //   if (filters.swimmingPool && !hotel.swimmingPool) continue;
-  //   if (filters.allowPets && !hotel.allowPets) continue;
-  //   if (filters.allowSmoking && !hotel.allowSmoking) continue;
+    if (filters.gym && !hotel.gym) continue;
+    if (filters.bar && !hotel.bar) continue;
+    if (filters.restaurant && !hotel.restaurant) continue;
+    if (filters.freeParking && !hotel.freeParking) continue;
+    if (filters.movieNight && !hotel.movieNight) continue;
+    if (filters.coffeeShop && !hotel.coffeeShop) continue;
+    if (filters.spa && !hotel.spa) continue;
+    if (filters.laundry && !hotel.laundry) continue;
+    if (filters.shopping && !hotel.shopping) continue;
+    if (filters.bikeRental && !hotel.bikeRental) continue;
+    if (filters.swimmingPool && !hotel.swimmingPool) continue;
+    if (filters.allowPets && !hotel.allowPets) continue;
+    if (filters.allowSmoking && !hotel.allowSmoking) continue;
 
-  //   // Search Bar Params
-  //   if (searchBar.location && !isMatchLocation(searchBar.location, hotel.address.province)) continue;
-  //   const availableRooms = getAvailableRooms(hotel.rooms, searchBar.timeRange, searchBar.people.guest); // time & people
-  //   if (availableRooms.length === 0) continue;
-
-  //   result.push(hotel);
-  // }
+    // Search Bar Params
+    // if (searchBar.location && !isMatchLocation(searchBar.location, hotel.address.province)) continue;
+    // const availableRooms = getAvailableRooms(hotel.rooms, searchBar.timeRange, searchBar.people.guest); // time & people
+    // if (availableRooms.length === 0) continue;
+    console.info('hihi ' + hotel);
+    result.push(hotel);
+  }
   return result;
 }
 

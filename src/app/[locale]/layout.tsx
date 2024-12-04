@@ -11,7 +11,7 @@ import { AuthContextProvider } from '~/contexts/auth.context';
 import '~/styles/globals.css';
 
 export const metadata: Metadata = {
-  title: 'UET Booking',
+  title: 'PTIT Booking',
   description: 'Booking a hotel of your choice',
   icons: { icon: '/images/favicon.png' },
 };
