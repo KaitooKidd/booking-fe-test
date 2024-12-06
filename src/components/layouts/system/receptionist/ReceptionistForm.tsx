@@ -3,20 +3,18 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { CalendarIcon } from '@radix-ui/react-icons';
 import { format } from 'date-fns';
-import { Button } from '~/components/ui/button';
+import { Loader2Icon, PencilLineIcon } from 'lucide-react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { HotelApi, HotelReceptionist, ReceptionistInfo } from '~/apis/hotel.api';
-import { Calendar } from '~/components/ui/calendar';
+import CustomDatePickerPopover from '~/components/common/CustomDatePickerPopover';
+import { Button } from '~/components/ui/button';
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '~/components/ui/form';
 import { Input } from '~/components/ui/input';
-import { Popover, PopoverContent, PopoverTrigger } from '~/components/ui/popover';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '~/components/ui/select';
 import { toast } from '~/components/ui/use-toast';
 import { cn } from '~/utils/ui.util';
-import { Loader2Icon, PencilLineIcon } from 'lucide-react';
-import { useState } from 'react';
-import CustomDatePickerPopover from '~/components/common/CustomDatePickerPopover';
 
 interface ReceptionistFormProps {
   data?: ReceptionistInfo;
@@ -46,13 +44,13 @@ export default function ReceptionistForm({ data, hotels, onFilter, setClose }: R
           ...data,
           email: data.id,
           hotelId: String(data.hotelId),
-          birthday: data.birthday ? new Date(data.birthday) : '',
+          birthday: data.birthday ? new Date(data.birthday) : undefined,
         } as any)
       : {
           email: '',
           name: '',
           phone: '',
-          birthday: '',
+          birthday: undefined,
           gender: '',
           hotelId: '',
         },

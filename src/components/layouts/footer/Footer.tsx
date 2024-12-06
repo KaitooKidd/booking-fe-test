@@ -84,7 +84,7 @@ export default function Footer({ className = '' }: FooterProps) {
         </div>
       </Container>
       <p className="bg-foreground p-2 text-center text-xs font-bold text-background">
-        UET Booking © 2024 All Rights Reserved.
+        PTIT Booking © 2024 All Rights Reserved.
       </p>
     </footer>
   );

@@ -7,7 +7,7 @@ export default function Logo() {
     <ILink href={routeConfig.HOME} className="flex cursor-pointer items-center space-x-1">
       <Icons.logo className="size-8 lg:size-10" />
       <span className="font-bold max-sm:text-sm">
-        <span className="text-red-500">UET</span> Booking
+        <span className="text-red-500">PTIT</span> Booking
       </span>
     </ILink>
   );
