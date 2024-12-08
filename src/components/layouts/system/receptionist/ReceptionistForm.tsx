@@ -25,7 +25,7 @@ interface ReceptionistFormProps {
 
 export default function ReceptionistForm({ data, hotels, onFilter, setClose }: ReceptionistFormProps) {
   const [isLoading, setIsLoading] = useState(false);
-
+  console.log('hihi ' + hotels);
   const formSchema = z.object({
     email: z.string().email({
       message: 'Email is required',

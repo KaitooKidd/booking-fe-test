@@ -11,6 +11,7 @@ interface ReceptionistsProps {}
 
 export default function Receptionists({}: ReceptionistsProps) {
   const { isLoading, error, data, mutate } = useHotelReceptionists();
+  console.log('haha ' + data?.hotels);
   if (isLoading) return <div>Loading...</div>;
   if (error || !data) return <div>Error!</div>;
 

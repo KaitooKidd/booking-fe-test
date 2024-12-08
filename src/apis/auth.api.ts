@@ -1,4 +1,3 @@
-import { getCookie } from 'cookies-next';
 import useSWRImmutable from 'swr/immutable';
 import { UserRole } from '~/configs/role.config';
 import { axiosPrivateInstance } from './instances/axios.instance';
@@ -51,10 +50,10 @@ export const AuthApi = {
   },
 
   useVerifyEmail(verifyToken: string): VerifyEmailResponse {
-    const token = getCookie('token');
+    // const token = getCookie('token');
     const fetcher = (url: string) =>
       new FetchInstance().fetcher(url, 'POST', {
-        headers: { Authorization: `Bearer ${token}` },
+        // headers: { Authorization: `Bearer ${token}` },
         body: JSON.stringify({ verifyToken }),
         next: { revalidate: false },
       });

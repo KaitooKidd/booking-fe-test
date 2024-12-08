@@ -78,10 +78,9 @@ export function getFilteredHotels(
     if (filters.allowSmoking && !hotel.allowSmoking) continue;
 
     // Search Bar Params
-    // if (searchBar.location && !isMatchLocation(searchBar.location, hotel.address.province)) continue;
+    if (searchBar.location && !isMatchLocation(searchBar.location, hotel.address.province)) continue;
     // const availableRooms = getAvailableRooms(hotel.rooms, searchBar.timeRange, searchBar.people.guest); // time & people
     // if (availableRooms.length === 0) continue;
-    console.info('hihi ' + hotel);
     result.push(hotel);
   }
   return result;
