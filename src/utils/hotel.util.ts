@@ -53,15 +53,15 @@ export function getFilteredHotels(
   }
   for (const hotel of originHotels) {
     // Filter Params
-    // if (!hotel.overview.rooms.minPrice) continue;
-    // if (
-    //   hotel.overview.rooms.minPrice < filters.priceRange[0] ||
-    //   hotel.overview.rooms.minPrice > filters.priceRange[1]
-    // ) {
-    //   continue;
-    // }
+    if (!hotel.overview.rooms.minPrice) continue;
+    if (
+      hotel.overview.rooms.minPrice < filters.priceRange[0] ||
+      hotel.overview.rooms.minPrice > filters.priceRange[1]
+    ) {
+      continue;
+    }
 
-    // if (hotel.overview.reviews.average < filters.rating) continue;
+    if (hotel.overview.reviews.average < filters.rating) continue;
 
     if (filters.gym && !hotel.gym) continue;
     if (filters.bar && !hotel.bar) continue;
@@ -79,8 +79,8 @@ export function getFilteredHotels(
 
     // Search Bar Params
     if (searchBar.location && !isMatchLocation(searchBar.location, hotel.address.province)) continue;
-    // const availableRooms = getAvailableRooms(hotel.rooms, searchBar.timeRange, searchBar.people.guest); // time & people
-    // if (availableRooms.length === 0) continue;
+    const availableRooms = getAvailableRooms(hotel.rooms, searchBar.timeRange, searchBar.people.guest); // time & people
+    if (availableRooms.length === 0) continue;
     result.push(hotel);
   }
   return result;

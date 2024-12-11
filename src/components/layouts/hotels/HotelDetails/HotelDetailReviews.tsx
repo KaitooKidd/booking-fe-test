@@ -4,7 +4,7 @@ import { HeartHandshake, Landmark, LucideIcon, MapPinned, MessageCircle, SprayCa
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { ReviewSchema } from '~/apis/review.api';
-import { Avatar, AvatarImage, AvatarFallback } from '~/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui/avatar';
 import { ReviewOverview, getReviewAverageFormat, getReviewOverview } from '~/utils/review.util';
 
 interface HotelDetailReviewsProps {
