@@ -1,35 +1,22 @@
 'use client';
 
-import {
-  Bike,
-  Car,
-  Cigarette,
-  Clapperboard,
-  Dumbbell,
-  KeyRound,
-  MapPin,
-  PawPrint,
-  ShoppingBasket,
-  Utensils,
-  Wine,
-} from 'lucide-react';
+import { Bike, Car, Clapperboard, Dumbbell, MapPin, ShoppingBasket, Utensils, Wine } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { FaSpa, FaSwimmer } from 'react-icons/fa';
 import { MdDryCleaning } from 'react-icons/md';
+import { HotelSchema } from '~/apis/hotel.api';
 import { ReviewSchema } from '~/apis/review.api';
 import { ScrollArea } from '~/components/ui/scroll-area';
-import { Switch } from '~/components/ui/switch';
 import { UserRole } from '~/configs/role.config';
 import { useAuth } from '~/contexts/auth.context';
 import { cn } from '~/utils/ui.util';
 import AmenityWrapper from '../../amenities/AmenityWrapper';
 import Gallery from './Gallery';
 import HotelDetailReviews from './HotelDetailReviews';
-import RoomBookingCard from './RoomBookingCard';
-import { HotelSchema } from '~/apis/hotel.api';
 import HotelDetailRules from './HotelDetailRules';
 import Recommendation from './Recommendation/Recommendation';
+import RoomBookingCard from './RoomBookingCard';
 
 interface HotelDetailsProps {
   hotel: HotelSchema;
@@ -44,7 +31,14 @@ export default function HotelDetails({ hotel, reviews }: HotelDetailsProps) {
     <div className="flex flex-col gap-6 pb-2">
       {/* Image Cover */}
       <div className="relative aspect-square h-[200px] w-full overflow-hidden rounded-lg bg-red-200 md:h-[400px]">
-        <Image src={hotel.imageUrl} alt={hotel.name} fill priority className="object-cover" />
+        <Image
+          src={hotel.imageUrl}
+          alt={hotel.name}
+          fill
+          priority
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </div>
 
       {/* Hotel Info */}

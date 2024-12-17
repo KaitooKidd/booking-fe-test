@@ -1,4 +1,4 @@
-import { uploadFile2 } from '~/apis/upload.api';
+import { uploadFile2, uploadMultiFiles } from '~/apis/upload.api';
 import { axiosPrivateInstance } from './instances/axios.instance';
 
 const StorageApiEndpoint = {
@@ -24,6 +24,7 @@ export const StorageApi = {
     // });
     try {
       const response = await uploadFile2(formData);
+      console.log(response?.key + ' ' + response?.url);
       return { isSuccess: true, data: response };
     } catch (error) {
       return { isSuccess: false, error };
@@ -34,9 +35,15 @@ export const StorageApi = {
     const formData = new FormData();
     files.forEach((file) => formData.append('files', file));
     formData.append('folder', folder);
-    return await axiosPrivateInstance.post<StorageUploadResponse[]>(StorageApiEndpoint.uploadMultiple, formData, {
-      headers: { 'Content-Type': 'multipart/form-data' },
-    });
+    // return await axiosPrivateInstance.post<StorageUploadResponse[]>(StorageApiEndpoint.uploadMultiple, formData, {
+    //   headers: { 'Content-Type': 'multipart/form-data' },
+    // });
+    try {
+      const response = await uploadMultiFiles(formData);
+      return { isSuccess: true, data: response };
+    } catch (error) {
+      return { isSuccess: false, error };
+    }
   },
 
   async deleteFile(key: string) {

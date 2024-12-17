@@ -42,3 +42,43 @@ export const uploadFile2 = async (formData: FormData, prefix = ''): Promise<Stor
       .end(buffer);
   });
 };
+
+export const uploadMultiFiles = async (formData: FormData, prefix = ''): Promise<StorageUploadResponse[] | null> => {
+  const files = formData.getAll('files') as File[];
+  const folder = formData.get('folder') as string;
+
+  if (!files || files.length === 0) throw new Error('Files are required');
+
+  const validFiles = files.filter((file) => file.size > 0);
+  if (validFiles.length === 0) {
+    return Promise.resolve(null);
+  }
+
+  const uploadPromises = validFiles.map(async (file) => {
+    const filePath = generateFilePath(file.name, folder, prefix);
+    const arrayBuffer = await file.arrayBuffer();
+
+    return new Promise<StorageUploadResponse>((resolve, reject) => {
+      const buffer = Buffer.from(arrayBuffer);
+      cloudinary.uploader
+        .upload_stream({ folder: folder, public_id: filePath }, (error, result) => {
+          if (error) {
+            reject(error);
+          } else if (result) {
+            resolve({ key: result.public_id, url: result.secure_url });
+          } else {
+            reject(new Error('Upload failed without an error message.'));
+          }
+        })
+        .end(buffer);
+    });
+  });
+
+  try {
+    const uploadResults = await Promise.all(uploadPromises);
+    return uploadResults;
+  } catch (error) {
+    console.error('Error uploading files:', error);
+    throw error;
+  }
+};

@@ -9,7 +9,6 @@ import { useForm } from 'react-hook-form';
 import { KeyedMutator } from 'swr';
 import * as z from 'zod';
 import { HotelApi, HotelSchema } from '~/apis/hotel.api';
-import { StorageApi } from '~/apis/storage.api';
 import { Alert, AlertDescription, AlertTitle } from '~/components/ui/alert';
 import { Button, buttonVariants } from '~/components/ui/button';
 import { Checkbox } from '~/components/ui/checkbox';
@@ -205,10 +204,13 @@ export default function HotelForm({ hotel, mutateHotel, viewOnly = false }: Hote
     if (!preview?.key) return;
 
     setPreviewIsDeleting(true);
-    const { isSuccess } = await StorageApi.deleteFile(preview!.key);
+    const { isSuccess } = { isSuccess: true };
     setPreviewIsDeleting(false);
     if (isSuccess) {
       setPreview(null);
+      form.setValue('imageUrl', '', { shouldDirty: true, shouldValidate: true, shouldTouch: true });
+      form.setValue('imageKey', '', { shouldDirty: true, shouldValidate: true, shouldTouch: true });
+
       toast({ variant: 'success', description: t('HotelForm.toast.removeSuccess') });
     } else {
       toast({ variant: 'destructive', description: t('HotelForm.toast.removeFailure') });
@@ -771,7 +773,7 @@ export default function HotelForm({ hotel, mutateHotel, viewOnly = false }: Hote
                             variant: 'success',
                             description: t('HotelForm.toast.uploadSuccess'),
                           });
-                          console.log('onUploadSuccess', result);
+                          // console.log('onUploadSuccess', result);
                           // field.value = result;
                           form.setValue('gallery', result);
                         }}
